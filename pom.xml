@@ -105,30 +105,30 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-pmd-plugin</artifactId>
-        <version>3.21.2</version>
-        <!--  or use version from pluginManagement  -->
-        <configuration>
-          <!--  failOnViolation is actually true by default, but can be disabled  -->
-          <failOnViolation>false</failOnViolation>
-          <!--  printFailingErrors is pretty useful  -->
-          <printFailingErrors>true</printFailingErrors>
-          <rulesets>
-            <ruleset>C:\Users\William\Teedy\practice-answer.xml</ruleset>
-          </rulesets>
-          <!--           <targetDirectory>${project.build.directory}/pmd-report</targetDirectory> -->
-          <!--           <format>html</format> -->
-        </configuration>
-        <executions>
-          <execution>
-            <goals>
-              <goal>check</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
+<!--      <plugin>-->
+<!--        <groupId>org.apache.maven.plugins</groupId>-->
+<!--        <artifactId>maven-pmd-plugin</artifactId>-->
+<!--        <version>3.21.2</version>-->
+<!--        &lt;!&ndash;  or use version from pluginManagement  &ndash;&gt;-->
+<!--        <configuration>-->
+<!--          &lt;!&ndash;  failOnViolation is actually true by default, but can be disabled  &ndash;&gt;-->
+<!--          <failOnViolation>false</failOnViolation>-->
+<!--          &lt;!&ndash;  printFailingErrors is pretty useful  &ndash;&gt;-->
+<!--          <printFailingErrors>true</printFailingErrors>-->
+<!--          <rulesets>-->
+<!--            <ruleset>practice-answer.xml</ruleset>-->
+<!--          </rulesets>-->
+<!--          &lt;!&ndash;           <targetDirectory>${project.build.directory}/pmd-report</targetDirectory> &ndash;&gt;-->
+<!--          &lt;!&ndash;           <format>html</format> &ndash;&gt;-->
+<!--        </configuration>-->
+<!--        <executions>-->
+<!--          <execution>-->
+<!--            <goals>-->
+<!--              <goal>check</goal>-->
+<!--            </goals>-->
+<!--          </execution>-->
+<!--        </executions>-->
+<!--      </plugin>-->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-antrun-plugin</artifactId>
