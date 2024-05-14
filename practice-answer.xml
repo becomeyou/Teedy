@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<ruleset name="Custom Rules"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+
+    <description>
+    </description>
+    <rule ref="category/java/codestyle.xml/ExcessiveMethodLength" />
+    <rule ref="category/java/codestyle.xml/ExcessiveClassLength" />
+
+    <!-- Add rules for Cyclomatic Complexity (CC) -->
+    <rule ref="category/java/codestyle.xml/CyclomaticComplexity" />
+
+    <!-- Add rules for Coupling Between Objects (CBO) -->
+    <rule ref="category/java/design.xml/ImmutableField" />
+    <rule ref="category/java/design.xml/DoNotExtendJavaLangError" />
+
+    <!-- Add rules for Lack of Cohesion in Methods (LCOM) -->
+    <rule ref="category/java/coupling.xml/LackOfCohesionOfMethods" />
+
+</ruleset>
