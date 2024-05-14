@@ -6,7 +6,7 @@
     <groupId>com.sismics.docs</groupId>
     <artifactId>docs-parent</artifactId>
     <version>1.10</version>
-    <relativePath>..</relativePath>
+    <relativePath>../pom.xml</relativePath>
   </parent>
   
   <modelVersion>4.0.0</modelVersion>
@@ -110,6 +110,20 @@
       <artifactId>jersey-media-multipart</artifactId>
       <scope>test</scope>
     </dependency>
+
+    <!--    Junit-->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>5.7.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>3.12.4</version>
+      <scope>test</scope>
+    </dependency>
+
 
   </dependencies>
   
