@@ -18,7 +18,7 @@ pipeline {
             steps {     
             
                 
-                sh 'docker login -u youbecome -p lu3445535'
+                sh 'sudo docker login -u youbecome -p lu3445535'
                
                        sh 'sudo docker tag teedy2024_manual youbecome/teedytry1:v1.0'
                        sh 'sudo docker push youbecome/teedytry1:v1.0'
